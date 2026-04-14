@@ -1,0 +1,78 @@
+nav {
+  background: #1a3a6b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  height: 68px;
+  gap: 16px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.logo-img {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 2px solid #c9a84c;
+  background: #c9a84c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.logo-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logo-img-fallback {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.logo-name {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+}
+
+.lang-toggle {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 20px;
+  padding: 6px 18px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.lang-toggle:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  nav { padding: 0 16px; height: 60px; }
+  .logo-name { font-size: 14px; }
+  .logo-img { width: 38px; height: 38px; }
+  .lang-toggle { padding: 5px 12px; font-size: 12px; }
+}
+
+@media (max-width: 380px) {
+  .logo-name { display: none; }
+}
