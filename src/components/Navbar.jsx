@@ -4,7 +4,6 @@ export default function Navbar({ lang, setLang, institutionName }) {
   return (
     <nav>
       <div className="nav-logo">
-        {/* غيري مسار الصورة — ضعي logo.png في مجلد public */}
         <div className="logo-img">
           <img
             src="/logo.png"
