@@ -1,4 +1,5 @@
 import '../styles/navbar.css';
+import logo from "../assets/logo.png";
 
 export default function Navbar({ lang, setLang, institutionName }) {
   return (
@@ -6,7 +7,7 @@ export default function Navbar({ lang, setLang, institutionName }) {
       <div className="nav-logo">
         <div className="logo-img">
           <img
-            src="/logo.png"
+            src={logo}
             alt="logo"
             onError={(e) => {
               e.target.style.display = "none";
